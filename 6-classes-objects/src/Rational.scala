@@ -27,6 +27,8 @@ class Rational(n: Int, d: Int) {
   def /(that: Rational) =
     new Rational(numer * that.denom, denom * that.numer)
 
+  def square = new Rational(numer * numer, denom * denom)
+
   override def toString: String = "" + numer + "/" + denom
 
 }

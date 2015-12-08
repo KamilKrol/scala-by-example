@@ -14,6 +14,11 @@ object Main1 {
 
     println(x)
 
+    val rational = new Rational(3,4)
+    val rationalSquare = rational.square
+
+    println("rational = " + rational + " rationalSquare = " + rationalSquare)
+
   }
 
 }
