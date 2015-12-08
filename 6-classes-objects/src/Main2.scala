@@ -7,7 +7,7 @@ object Main2 {
 
   def main(args: Array[String]): Unit = {
 
-    var set: IntSet = new EmptySet
+    var set: IntSet = EmptySet
     set = set.incl(1)
     set = set.incl(2)
     set = set.incl(3)
