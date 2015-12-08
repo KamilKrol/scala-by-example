@@ -5,9 +5,9 @@ object Main1 {
 
   def main(args: Array[String]): Unit = {
 
-    println(sumInts1(1, 5) + " v " + sumInts2(1, 5))
-    println(sumSquares1(1, 5) + " v " + sumSquares2(1, 5))
-    println(sumPowersOfTwo1(1, 5) + " v " + sumPowersOfTwo2(1, 5))
+    println(sumInts1(1, 5) + " v " + sumInts2(1, 5) + " v " + sumGeneric(x => x, 1, 5))
+    println(sumSquares1(1, 5) + " v " + sumSquares2(1, 5) + " v " + sumGeneric(x => x * x, 1, 5))
+    println(sumPowersOfTwo1(1, 5) + " v " + sumPowersOfTwo2(1, 5) + " v " + sumGeneric((x: Int) => x, 1, 5))
 
   }
 
