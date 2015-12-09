@@ -7,8 +7,11 @@ object Main1 {
 
   def main(args: Array[String]): Unit = {
 
-    val stack = new EmptyStack
-    stack.pop
+    val x = new EmptyStack[Int]
+    val y = x.push(1).push(2)
+
+    println(y.top)
+    println(y.pop.top)
 
   }
 

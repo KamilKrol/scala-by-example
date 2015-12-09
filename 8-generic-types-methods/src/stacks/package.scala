@@ -30,4 +30,7 @@ package object stacks {
     override def pop: Stack[T] = rest
   }
 
+  def isPrefix[T](prefix: Stack[T], stack: Stack[T]): Boolean =
+    prefix.isEmpty || (prefix.top == stack.top && isPrefix(prefix.pop, stack.pop))
+
 }
