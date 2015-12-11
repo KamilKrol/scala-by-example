@@ -11,6 +11,7 @@ object Main10 {
 
   }
 
-  def flatten[T](list: List[List[T]]): List[T] = ???
+  def flatten[T](list: List[List[T]]): List[T] =
+    (list :\ (Nil: List[T])) { (x, xs) => x ::: xs }
 
 }
